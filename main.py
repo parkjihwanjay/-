@@ -27,10 +27,3 @@ for result in final_result:
     row.append(result['link'])
 
     writer.writerow(row)
-
-
-# note_html = requests.get('https://search.shopping.naver.com/search/all.nhn?pagingIndex=29&pagingSize=80&query=노트')
-# note_soup = BeautifulSoup(note_html.text, "html.parser")
-
-# note_list_box = note_soup.find("ul", {"class" : "goods_list"})
-# note_list = note_list_box.find_all('li', {"class" : "_itemSection"})
